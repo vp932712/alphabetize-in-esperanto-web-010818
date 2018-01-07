@@ -5,10 +5,10 @@
 # end
 
 def alphabetize(arr)
-  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
   # alpha = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
 
   arr.sort_by do |word|
-    word.chars.map { |c| ESPERANTO_ALPHABET.index(c) }
+    word.chars.map { |c| esperanto.index(c) }
   end
 end
