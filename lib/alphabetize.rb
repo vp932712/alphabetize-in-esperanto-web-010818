@@ -1,13 +1,14 @@
 # def alphabetize(arr)
-#   ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+#
 #
 #
 # end
 
-def alphabetize(phrases)
-  alpha = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+def alphabetize(arr)
+  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+  # alpha = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
 
-  phrases.sort_by do |phrase|
-    phrase.chars.map { |c| alpha.index(c) }
+  arr.sort_by do |word|
+    word.chars.map { |c| ESPERANTO_ALPHABET.index(c) }
   end
 end
